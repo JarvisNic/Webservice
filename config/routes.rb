@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
+  
+  resources :tablas, only: [:index, :create, :destroy, :update, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+
+  namespace :api, defaults: {format: 'json'} do
+  resources :tablas, only: [:index, :create, :destroy, :update, :show]
+end
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+  root 'tablas#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

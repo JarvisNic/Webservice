@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rango: MyString
+  sintoma: MyString
+  valor: 1
+
+two:
+  rango: MyString
+  sintoma: MyString
+  valor: 1

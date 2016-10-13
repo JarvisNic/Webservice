@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rango:</strong>
+  <%= @tabla.rango %>
+</p>
+
+<p>
+  <strong>Sintoma:</strong>
+  <%= @tabla.sintoma %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @tabla.valor %>
+</p>
+
+<%= link_to 'Edit', edit_tabla_path(@tabla) %> |
+<%= link_to 'Back', tablas_path %>
